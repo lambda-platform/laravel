@@ -1,0 +1,34 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "ldev": "cross-env process.env.section=lambda npm run development",
+        "development": "mix",
+        "start": "mix watch",
+        "lstart": "cross-env process.env.section=lambda mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "lhot": "cross-env process.env.section=lambda mix watch --hot",
+        "prod": "npm run rm && npm run production && npm run lproduction",
+        "rm": "rm -f ./public/mix-manifest.json 2&> /dev/null",
+        "production": "mix --production",
+        "lproduction": "cross-env process.env.section=lambda mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.6",
+        "laravel-mix-merge-manifest": "^2.0.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "sass": "^1.32.7",
+        "sass-loader": "8.*",
+        "sw-precache-webpack-plugin": "^1.0.0",
+        "vue-loader": "^15.9.5",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "vue": "^2.6.12",
+        "vue-router": "^3.5.1",
+        "vuex": "^3.6.2"
+    }
+}

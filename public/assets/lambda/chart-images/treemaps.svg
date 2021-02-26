@@ -1,0 +1,25 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <g stroke="null" transform="matrix(1.10462,0,0,1.10462,-66.5693,-66.5693) ">
+  <g stroke="null" id="svg_7">
+   <g stroke="null" id="svg_12">
+    <title stroke="null" transform="translate(0,1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(0,-0.9052886962890625) translate(-1,-1) scale(1.336401104927063,1.149707317352295) translate(1,1) translate(-0.7482783198356628,-0.8697865605354309) scale(1) translate(0.7482783198356628,0.8697865605354309) ">background</title>
+    <rect stroke="null" class="active-path" x="-1" y="-1" width="514" height="360" id="canvas_background" fill="#ffffff"/>
+    <g stroke="null" id="canvasGrid" display="none"/>
+   </g>
+   <g stroke="null" id="svg_13">
+    <title stroke="null" transform="translate(0,1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,-1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(0,1) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(1,0) translate(0,-0.9052886962890625) translate(-1,-1) scale(1.336401104927063,1.149707317352295) translate(1,1) translate(-0.7482783198356628,-0.8697865605354309) scale(1) translate(0.7482783198356628,0.8697865605354309) ">Layer 1</title>
+    <rect stroke="null" fill="#76b7f7" stroke-width="1.5" x="30.041415" y="66.250833" width="240.552199" height="152.911073" id="svg_1"/>
+    <rect stroke="null" fill="#247ed8" stroke-width="1.5" x="30.041415" y="227.209858" width="240.552199" height="152.911073" id="svg_2"/>
+    <rect stroke="null" fill="#7cb8f4" stroke-width="1.5" x="279.948422" y="66.250833" width="121.612505" height="73.855921" id="svg_3"/>
+    <rect stroke="null" fill="#a4ccf4" stroke-width="1.5" x="408.242928" y="66.250833" width="116.2669" height="72.70621" id="svg_4"/>
+    <rect stroke="null" fill="#FFC900" stroke-width="1.5" x="279.948422" y="150.179467" width="65.483659" height="115.245384" id="svg_5"/>
+    <rect stroke="null" fill="#60a2e5" stroke-width="1.5" x="357.459686" y="151.329176" width="82.856874" height="111.796252" id="svg_6"/>
+    <rect stroke="null" fill="#FFC900" stroke-width="1.5" x="279.948422" y="274.34785" width="121.612505" height="106.047735" id="svg_8"/>
+    <rect stroke="null" fill="#747BBF" stroke-width="1.5" x="408.242928" y="273.198147" width="121.612505" height="55.460607" id="svg_9"/>
+    <rect stroke="null" fill="#CAE2F9" stroke-width="1.5" x="409.579329" y="337.581759" width="121.612505" height="42.813827" id="svg_10"/>
+    <rect stroke="null" fill="#247ed8" stroke-width="1.5" x="451.007763" y="150.179465" width="74.838477" height="112.945967" id="svg_11"/>
+   </g>
+  </g>
+ </g>
+
+</svg>
