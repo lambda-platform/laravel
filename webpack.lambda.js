@@ -2,7 +2,8 @@ const mix = require('laravel-mix');
 const path = require("path");
 const fs = require('fs');
 require("laravel-mix-merge-manifest");
-const lambdaRoot = "../../vue";
+// const lambdaRoot = "../../vue";
+const lambdaRoot = "./node_modules/@lambda-platform";
 const dataform_custom = "./dataform_custom/"
 
 if (!fs.existsSync(dataform_custom)) {
@@ -19,17 +20,17 @@ mix.webpackConfig({
     resolve: {
         modules: [
             path.resolve(__dirname, './node_modules'),
-            path.resolve(`${lambdaRoot}/agent/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/dataform/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/datagrid/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/datasource/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/krud/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/moqup/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/page/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/puzzle/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/chart/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/notify/`, 'node_modules'),
-            path.resolve(`${lambdaRoot}/template/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/agent/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/dataform/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/datagrid/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/datasource/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/krud/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/moqup/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/page/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/puzzle/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/chart/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/notify/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/template/`, 'node_modules'),
         ],
         alias: {
             dataform_custom: path.resolve(__dirname, dataform_custom),
@@ -46,13 +47,21 @@ mix.options({
 
 mix.styles(
     [
-        `${lambdaRoot}/template/node_modules/` + "iview/dist/styles/iview.css",
-        `${lambdaRoot}/dataform/node_modules/` + "leaflet/dist/leaflet.css",
-        `${lambdaRoot}/dataform/node_modules/` + "leaflet-draw/dist/leaflet.draw.css",
-        `${lambdaRoot}/dataform/node_modules/` + "leaflet.fullscreen/Control.FullScreen.css",
-        `${lambdaRoot}/dataform/node_modules/` + "vue-multiselect/dist/vue-multiselect.min.css",
-        `${lambdaRoot}/datagrid/node_modules/` + "ag-grid-community/dist/styles/ag-grid.css",
-        `${lambdaRoot}/datagrid/node_modules/` + "ag-grid-community/dist/styles/ag-theme-balham.css",
+        // `${lambdaRoot}/template/node_modules/` + "iview/dist/styles/iview.css",
+        // `${lambdaRoot}/dataform/node_modules/` + "leaflet/dist/leaflet.css",
+        // `${lambdaRoot}/dataform/node_modules/` + "leaflet-draw/dist/leaflet.draw.css",
+        // `${lambdaRoot}/dataform/node_modules/`+"leaflet.fullscreen/Control.FullScreen.css",
+        // `${lambdaRoot}/dataform/node_modules/`+"vue-multiselect/dist/vue-multiselect.min.css",
+        // `${lambdaRoot}/datagrid/node_modules/`+"ag-grid-community/dist/styles/ag-grid.css",
+        // `${lambdaRoot}/datagrid/node_modules/`+"ag-grid-community/dist/styles/ag-theme-balham.css",
+        `./node_modules/` + "iview/dist/styles/iview.css",
+        `./node_modules/` + "leaflet/dist/leaflet.css",
+        `./node_modules/` + "leaflet-draw/dist/leaflet.draw.css",
+        `./node_modules/`+"leaflet.fullscreen/Control.FullScreen.css",
+        `./node_modules/`+"vue-multiselect/dist/vue-multiselect.min.css",
+        `./node_modules/`+"ag-grid-community/dist/styles/ag-grid.css",
+        `./node_modules/`+"ag-grid-community/dist/styles/ag-theme-balham.css",
+
     ],
     "public/assets/lambda/css/vendor.css"
 );
