@@ -6,7 +6,7 @@ return [
     'title' => 'Lambda',
     'subTitle' => 'Lambda Paltform',
     'copyright' => 'Copyright ©' . date('Y') . ' Lambda Development Team',
-    'favicon' => '/images/1favicon.png',
+    'favicon' => '/images/puzzle-logo-white.png',
     'bg' => '/assets/lambda/images/login-bg.jpg',
     'logo' => '/assets/lambda/images/logo.png',
     'logoText' => '',
