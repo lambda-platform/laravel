@@ -1168,10 +1168,10 @@
     vuedraggable "^2.24.3"
     vuex "^3.6.2"
 
-"@lambda-platform/datasource@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@lambda-platform/datasource/-/datasource-2.0.0.tgz#42a97131fcf5683240ec135d90c981b4c84cebde"
-  integrity sha512-QntJSrfsBhsaMOQOik3XCsoCnkGTBcgawbza7DgeLaA4jR726ZBaNW5G0FhcSBxNfDv7c4rf1FLwJaVeqyVxgg==
+"@lambda-platform/datasource@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@lambda-platform/datasource/-/datasource-2.0.2.tgz#cb6276d0cf3080a4e23370fe76357e56ddb6d357"
+  integrity sha512-O08ZD1pdmBmLDj0eDBE4OdRhbK3KEg4sH9DteYoTMkuN+7vPEOBWaFQ+Kcj3y3rUQDJdr37eJ6uJS83jESkDmQ==
   dependencies:
     axios "^0.21.1"
     core-js "^3.6.5"
@@ -1182,6 +1182,8 @@
     lodash "^4.17.20"
     moment "^2.29.1"
     sql-formatter "^4.0.2"
+    sql-parser "^0.5.0"
+    sql-parser-mistic "^1.2.3"
     vue "^2.6.11"
     vue-svg-pan-zoom "^1.1.0"
 
@@ -7488,6 +7490,16 @@ sql-formatter@^4.0.2:
   integrity sha512-R6u9GJRiXZLr/lDo8p56L+OyyN2QFJPCDnsyEOsbdIpsnDKL8gubYFo7lNR7Zx7hfdWT80SfkoVS0CMaF/DE2w==
   dependencies:
     argparse "^2.0.1"
+
+sql-parser-mistic@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/sql-parser-mistic/-/sql-parser-mistic-1.2.3.tgz#338b8685bd9fe7844df0dccc01afc2ebca0950ea"
+  integrity sha512-2jyVSr7jIgbeFnPW8JO4hTMkDP5mTxbbWX+P7GcCbCwHp+ffiJeQGBK4dDLoPZvexK2Wgy0aUBfsWgc2DPhYRg==
+
+sql-parser@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/sql-parser/-/sql-parser-0.5.0.tgz#a79b6e66452f3d615b211989f006f34033bc436a"
+  integrity sha1-p5tuZkUvPWFbIRmJ8AbzQDO8Q2o=
 
 stable@^0.1.8:
   version "0.1.8"
