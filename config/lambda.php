@@ -4,7 +4,7 @@ return [
     'theme' => 'aside',
     'app' => 'lambda',
     'title' => 'Lambda',
-    'subTitle' => 'Lambda Paltform',
+    'subTitle' => 'Lambda Platform',
     'copyright' => 'Copyright ©' . date('Y') . ' Lambda Development Team',
     'favicon' => '/images/puzzle-logo-white.png',
     'bg' => '/assets/lambda/images/login-bg.jpg',
