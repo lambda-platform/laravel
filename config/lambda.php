@@ -13,6 +13,9 @@ return [
     'super_url' => '/lambda/puzzle',
     'app_url' => '/lambda',
     'has_language' => false,
+    'img_width' => 'null', // etc: '1920', '800', 'null'
+    'img_thumb_width' => 'null', // etc: '350', '250', 'null'
+    'img_quality' => 'null', // etc: '90', '75', 'null'
     'languages' => [
         ['label' => "Moнгол", 'code' => 'mn']
     ],

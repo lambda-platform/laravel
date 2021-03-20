@@ -52,7 +52,7 @@ class CreateLambdaSetupTables extends Migration
             $table->string('phone', 80)->nullable($value = true);
             $table->string('gender', 255)->nullable($value = true);
             $table->string('fcm_token', 255)->nullable($value = true);
-            $table->string('status', 255);
+            $table->string('status', 255)->nullable($value = true);
             $table->rememberToken();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

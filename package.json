@@ -28,7 +28,7 @@
     "dependencies": {
         "@lambda-platform/agent": "^2.0.0",
         "@lambda-platform/chart": "^1.0.0",
-        "@lambda-platform/dataform": "^2.0.1",
+        "@lambda-platform/dataform": "^2.0.2",
         "@lambda-platform/datagrid": "^2.0.0",
         "@lambda-platform/datasource": "^2.0.2",
         "@lambda-platform/krud": "^1.0.0",

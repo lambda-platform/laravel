@@ -16,15 +16,16 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
+        "intervention/image": "^2.5.1",
         "tymon/jwt-auth": "^1.0",
-        "lambda-platform/dataform": "^0.0.6",
+        "lambda-platform/dataform": "^0.0.7",
         "lambda-platform/agent": "^0.0.2",
         "lambda-platform/datagrid": "^0.0.2",
         "lambda-platform/datasource": "^0.0.2",
         "lambda-platform/krud": "^0.0.2",
         "lambda-platform/moqup": "^0.0.2",
-        "lambda-platform/puzzle": "^0.0.3",
-        "lambda-platform/template-paper": "^0.0.2"
+        "lambda-platform/puzzle": "^0.0.5",
+        "lambda-platform/template-paper": "^0.0.3"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
