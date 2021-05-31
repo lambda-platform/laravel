@@ -10,22 +10,23 @@
     ],
     "license": "MIT",
     "require": {
+        "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "intervention/image": "^2.5.1",
-        "lambda-platform/agent": "^0.0.2",
-        "lambda-platform/dataform": "^0.0.7",
-        "lambda-platform/datagrid": "^0.0.2",
-        "lambda-platform/datasource": "^0.0.2",
-        "lambda-platform/krud": "^0.0.2",
-        "lambda-platform/moqup": "^0.0.2",
-        "lambda-platform/puzzle": "^0.0.5",
-        "lambda-platform/template-paper": "^0.0.3",
+        "kreait/laravel-firebase": "3.0.0",
+        "lambda-platform/agent": "dev-dev",
+        "lambda-platform/dataform": "dev-master",
+        "lambda-platform/datagrid": "dev-dev",
+        "lambda-platform/datasource": "dev-master",
+        "lambda-platform/krud": "dev-dev",
+        "lambda-platform/moqup": "dev-master",
+        "lambda-platform/puzzle": "dev-master",
+        "lambda-platform/template-paper": "dev-dev",
         "laravel/framework": "^8.12",
+        "laravel/socialite": "^5.2",
         "laravel/tinker": "^2.5",
-        "php": "^7.3|^8.0",
-        "tymon/jwt-auth": "^1.0"
+        "lcobucci/jwt": "^4.1.4"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -35,6 +36,40 @@
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/agent-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/dataform-php.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/datagrid-php.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/datasource-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/krud-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/moqup-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/puzzle-laravel.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lambda-platform/template-laravel.git"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
@@ -54,7 +89,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Helper\\": "Helper/"
         }
     },
     "minimum-stability": "dev",

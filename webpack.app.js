@@ -6,8 +6,8 @@ require("laravel-mix-merge-manifest");
 mix.webpackConfig({
     output: {
         chunkFilename: mix.inProduction()
-            ? "js/chunks/[name].[chunkhash].js"
-            : "js/chunks/[name].js"
+            ? "assets/mcud/js/chunks/[name].[chunkhash].js"
+            : "assets/mcud/js/chunks/[name].js"
     },
 
     resolve: {
@@ -25,15 +25,16 @@ mix.options({
 }).setPublicPath("public");
 
 console.log("Compiling - client only app");
-mix.js("resources/assets/web/js/index.js", "public/assets/example/js/app.js").vue();
-mix.sass("resources/assets/web/scss/style.scss", "public/assets/example/css/app.css");
+mix.js("resources/assets/web/js/index.js", "public/assets/mcud/js/app.js").vue();
+mix.sass("resources/assets/web/scss/style.scss", "public/assets/mcud/css/app.css");
+mix.sass("resources/assets/web/scss/theme.scss", "public/assets/mcud/css/theme.css");
 mix.extract(
     [
         "axios",
         "vue",
         "vue-router"
     ],
-    "public/assets/example/js/vendor.js"
+    "public/assets/mcud/js/vendor.js"
 );
 
 if (mix.inProduction()) {

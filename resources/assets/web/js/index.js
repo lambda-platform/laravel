@@ -1,9 +1,14 @@
+import Vue from 'vue';
 import "./bootstrap"
+import router from './router'
 import App from './App';
 
+Vue.prototype.$init = window.init;
+Vue.prototype.$user = window.init.user;
+Vue.prototype.$role = window.init.role;
+
 new Vue({
-    components: {
-        App
-    },
-    render: h => h(App),
-}).$mount('#app');
+    router,
+    el: '#app',
+    extends: App
+});

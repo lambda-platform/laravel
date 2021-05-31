@@ -37,9 +37,18 @@
         "@lambda-platform/page": "^1.0.0",
         "@lambda-platform/puzzle": "^1.0.0",
         "@lambda-platform/template": "^1.0.0",
+        "amcharts3": "^3.21.15",
+        "ammap3": "^3.21.15",
         "axios": "^0.21.1",
+        "element-ui": "^2.15.1",
+        "moment": "^2.29.1",
         "vue": "^2.6.12",
+        "vue-js-modal": "1.3.34",
+        "vue-lazyload": "^1.3.3",
         "vue-router": "^3.5.1",
+        "vue-simple-addthis-share": "^0.1.5",
+        "vue-slimscroll": "^1.0.1",
+        "vue-timeago": "^5.1.3",
         "vuex": "^3.6.2"
     }
 }

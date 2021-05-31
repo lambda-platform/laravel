@@ -2,7 +2,7 @@
     <div class="paper-theme aside-page">
         <sidebar class="with-text">
             <div slot="brand" class="logo">
-                <img :src="$logo" alt="Lambda"/>
+                <img :src="$logo" alt="Real State"/>
             </div>
 
             <ul>

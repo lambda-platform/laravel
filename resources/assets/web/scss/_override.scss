@@ -1,0 +1,35 @@
+.listings-list {
+    .list-thumb {
+        background-size: cover !important;
+        background-repeat: no-repeat;
+    }
+}
+
+.barilga-detail {
+    .el-carousel__item {
+        .img-item {
+            color: #475669;
+            opacity: 0.75;
+            height: 300px;
+            margin: 0;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+            h3{
+                position: absolute;
+                z-index: 100;
+                bottom: 0;
+                left: 10px;
+                color: #ffffff;
+                background-color: rgba(34, 34, 34, 0.6);
+                padding: 10px;
+                border-radius: 5px;
+                max-height: 70px;
+                overflow-y: auto;
+                font-size: 18px;
+                right: 10px;
+            }
+        }
+    }
+}
