@@ -1,0 +1,16 @@
+//@import "../fonts/themify-icons";
+@import "dashboard";
+@import "settings";
+@import "template";
+@import "subnav";
+@import "tabsstyle";
+@import "report";
+@import "color";
+.buildingtab{
+    .fieldset{
+        margin-top: 20px;
+    }
+    .dataform-footer{
+        margin-bottom:100px!important;
+    }
+}

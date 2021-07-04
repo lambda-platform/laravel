@@ -21,10 +21,10 @@ class ListController extends Controller
             $qr = $qr->where('sum_duureg_id', $sum);
         }
 
-//        $year = request('year');
-////        if ($year != "" || $year != null) {
-////            $qr = $qr->whereRaw('YEAR(updated_at) = ' . $year);
-////        }
+        $year = request('year');
+        if ($year != "" || $year != null) {
+            $qr = $qr->whereRaw('YEAR(updated_at) = ' . $year);
+        }
 
         $qr = $qr->where('zahialga_tuluv', 'Захиалга авч буй');
       //  $qr = $qr->whereRaw('(4 in(zoriulalt_ids) or 221 in(zoriulalt_ids))');
@@ -40,7 +40,7 @@ class ListController extends Controller
     {
         $data = new \stdClass();
         $data->barilga = DB::table('view_barilga_ab_detail as b')->where('id', $id)->first();
-//        dump($data);
+//        dd($data->barilga);
         if ($data->barilga->guiltsetgegch_comps) {
             $data->related = DB::table('view_barilga_ab as b')->
             where('id', '!=', $id)->
@@ -49,7 +49,8 @@ class ListController extends Controller
             //return view('detail', compact('data', 'related'));
         }
         $data->imgs = DB::table('t_barilga_image')->where('parent_id', $id)->get();
-        $data->detail=DB::table('view_barilga_ab_detail_more')->where('barilga_id', $id)->first();
+        $data->detail = DB::table('view_barilga_ab_detail_more')->where('barilga_id', $id)->first();
+//        dd($data->detail);
         return response()->json(
             $data
         );

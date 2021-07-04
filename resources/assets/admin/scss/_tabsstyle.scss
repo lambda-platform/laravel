@@ -1,0 +1,83 @@
+$primary: #eb4d4b;
+.buildingtab {
+    padding: 0;
+    width: 100%;
+    //background-color: #dedede;
+    .header {
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        height: 28px;
+        padding-left: 20px;
+        box-shadow: rgb(221, 221, 221) 0px 1px 6px;
+        h3 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+            color: #444444;
+        }
+
+        a {
+            margin-right: 10px;
+            color: #545454;
+            font-size: 11px;
+            border-right: solid 1px #dedede;
+            padding-right: 10px;
+            &:hover {
+                color: #3498db;
+            }
+        }
+    }
+
+    .ivu-tabs-nav-scroll {
+        background: #ffffff;
+        padding-left: 20px;
+        .ivu-tabs-ink-bar {
+            background: $primary !important;
+            height: 2px;
+        }
+    }
+
+    .ivu-tabs-tab {
+        text-transform: inherit !important;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover{
+            color: $primary;
+        }
+        &.ivu-tabs-tab-active {
+            color: $primary;
+        }
+    }
+
+    .ivu-tabs-bar{
+        margin-bottom: 0 !important;
+    }
+
+    .ivu-tabs-tabpane {
+        //padding: 5px 15px;
+        .dataform {
+            box-shadow: rgba(221, 221, 221, 0.7) 0px 0px 8px 1px;
+            .dataform-header {
+                display: none !important;
+            }
+            .dataform-body{
+                padding-top: 20px;
+            }
+
+            &.material-form{
+                .fieldset {
+                    legend {
+                        color: #565656;
+                        &:before {
+                            background: rgba($primary, .7) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+

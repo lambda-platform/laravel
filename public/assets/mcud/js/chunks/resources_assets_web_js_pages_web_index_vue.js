@@ -565,7 +565,6 @@ var monthChart1 = null;
       var _this2 = this;
 
       axios.post("/filter", this.filter).then(function (o) {
-        console.log(o);
         $('#totalProjects').text(o.data.all);
         $('#totalObjects').text(o.data.allObject);
         $('#totalObjectsInActive').text('Үүнээс захиалга авч буй (' + o.data.niitiinObjectInActivePercent + '%)');
@@ -593,7 +592,6 @@ var monthChart1 = null;
       return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
     },
     currencyFormat: function currencyFormat(num) {
-      console.log(num);
       return num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
     },
     customGetDate: function customGetDate(d) {

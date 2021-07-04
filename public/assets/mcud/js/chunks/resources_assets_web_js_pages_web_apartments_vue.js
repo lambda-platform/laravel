@@ -150,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
         room: null,
         price: null,
         type: null,
-        year: 2020
+        year: 2021
       },
       data: window.init.data,
       sumlist: window.init.data.sum,
@@ -174,7 +174,6 @@ __webpack_require__.r(__webpack_exports__);
       this.datas = [];
       axios.post("/getoslist?page=" + page, this.filter).then(function (_ref) {
         var data = _ref.data;
-        console.log(data);
         _this.datas = data.data;
         _this.paginate.total = data.total;
         _this.paginate.currentPage = data.current_page;
@@ -202,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     renderImg: function renderImg(path) {
       if (path == null) return {
-        'background-image': 'url("/assets/zipcode/images/unnamed.png")'
+        'background-image': 'url("/assets/mcud/images/unnamed.png")'
       };
       return {
         'background': 'url("' + path.replace(/\\/g, '/') + '")'
@@ -391,7 +390,7 @@ var render = function() {
                         _c(
                           "el-select",
                           {
-                            attrs: { disabled: "", placeholder: "Сонгоно уу" },
+                            attrs: { placeholder: "Сонгоно уу" },
                             model: {
                               value: _vm.filter.year,
                               callback: function($$v) {

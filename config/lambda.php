@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'theme' => 'aside',
+    'theme' => 'man',
     'app' => 'lambda',
     'title' => 'Lambda',
     'subTitle' => 'Lambda Platform',
     'copyright' => 'Copyright ©' . date('Y') . ' Lambda Development Team',
     'favicon' => '/images/puzzle-logo-white.png',
     'bg' => '/assets/lambda/images/login-bg.jpg',
-    'logo' => '/assets/lambda/images/logo.png',
+    'logo' => '/assets/mcud/images/logo.png',
     'logoText' => '',
     'super_url' => '/lambda/puzzle',
-    'app_url' => '/lambda',
+    'app_url' => '/mcud',
     'has_language' => false,
     'img_width' => 'null', // etc: '1920', '800', 'null'
     'img_thumb_width' => 'null', // etc: '350', '250', 'null'

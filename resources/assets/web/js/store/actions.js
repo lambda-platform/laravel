@@ -9,7 +9,7 @@ import {
 export const dt = ({
     commit
 }, payload) => {
-    console.log(payload);
+    // console.log(payload);
     commit('toggleLoader', payload.loader);
     axios[payload.type](payload.url, payload.data)
         .then(o => {

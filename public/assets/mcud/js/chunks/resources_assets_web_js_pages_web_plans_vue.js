@@ -108,7 +108,6 @@ __webpack_require__.r(__webpack_exports__);
       this.datas = [];
       axios.post("/getplanlist").then(function (_ref) {
         var data = _ref.data;
-        console.log(data);
         _this.datas = data.data;
         _this.paginate.total = data.total;
         _this.paginate.currentPage = data.current_page;

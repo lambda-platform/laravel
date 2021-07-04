@@ -28,7 +28,21 @@
             </ul>
 
             <div slot="aside-bottom">
-                <ul>
+                <ul class="optionMenus">
+                    <li v-show="role==29 || role==27 || role==31">
+                        <router-link to="/faq"   class="optionMenuItem">
+                            <!-- <Badge count="3"></Badge> -->
+                            <i class="ti ti-info-alt"></i>
+                            <span>Лавлах</span>
+                        </router-link>
+                    </li>
+                    <li v-show="role===29">
+                        <router-link to="/setting"  class="optionMenuItem">
+                            <!-- <Badge count="3"></Badge> -->
+                            <i class="ti ti-settings"></i>
+                            <span>Тохиргоо</span>
+                        </router-link>
+                    </li>
                     <li v-if="extra.userlist">
                         <router-link :to="`/module/agent`">
                             <i class="ti-user"></i>

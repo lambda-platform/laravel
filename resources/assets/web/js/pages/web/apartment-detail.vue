@@ -20,13 +20,13 @@
                                 <el-carousel indicator-position="outside">
                                     <el-carousel-item v-for="item in imgs" :key="item.id" v-if="imgs.length>0">
                                         <div class="img-item">
-                                            <img :src="item.path?item.path:'/assets/zipcode/images/unnamed.png'" alt="">
+                                            <img :src="item.path?item.path:'/assets/mcud/images/unnamed.png'" alt="">
                                             <h3>{{item.desc}}</h3>
                                         </div>
                                     </el-carousel-item>
                                     <el-carousel-item v-else>
                                         <div class="img-item">
-                                            <img src="/assets/zipcode/images/unnamed.png" alt="">
+                                            <img src="/assets/mcud/images/unnamed.png" alt="">
                                             <h3>Зураг олдсонгүй</h3>
                                         </div>
                                     </el-carousel-item>
@@ -156,12 +156,12 @@
 
                                 <div class="col-md-4 col-sm-12 info-section" style="padding-right: 20px">
                                     <h4>Нэмэлт мэдээлэл</h4>
-                                    <table class="table table-small table-striped full">
+                                    <table class="table table-small table-striped full" v-if="detail !== null">
                                         <tbody>
                                         <tr>
                                             <td>Камержуулалттай эсэх</td>
                                             <td>
-                                                <i v-if="detail.is_camera == 1"
+                                                <i v-if="detail.is_camera === 1"
                                                    class="ti-check text-success"></i>
                                                 <i v-else class="ti-close text-danger"></i></td>
                                         </tr>
@@ -216,6 +216,7 @@
                                         </tr>
                                         </tbody>
                                     </table>
+                                    <p v-else> Барилгын нэмэлт мэдээлэл ороогүй байна</p>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +225,6 @@
             </div>
             <div class="col-md-4">
                 <div class="listings-list listings-list similar-list">
-
                     <div class="listings-grid__item"
                          v-if="related.length>0"
                          v-for="item in related">
@@ -273,7 +273,7 @@
             return {
                 loading: true,
                 data: null,
-                detail:null,
+                detail: null,
                 related: [],
                 imgs:[]
             }
@@ -285,11 +285,10 @@
             getData() {
                 this.loading = true;
                 this.data = null;
-                this.related=[];
-                this.imgs=[];
-                this.detail=null;
+                this.related = [];
+                this.imgs = [];
+                this.detail = null;
                 axios.post("/getosdetail/" + this.$route.params.id).then(({data}) => {
-                    console.log(data);
                     this.data = data.barilga;
                     this.related = data.related;
                     this.imgs = data.imgs;
@@ -300,13 +299,9 @@
             },
             renderImg(path) {
                 if (path == null)
-                    return {'background-image': 'url("/assets/zipcode/images/unnamed.png")'};
+                    return {'background-image': 'url("/assets/mcud/images/unnamed.png")'};
                 return {'background': 'url("' + path.replace(/\\/g, '/') + '")'};
             }
         }
     }
 </script>
-
-<style scoped>
-
-</style>

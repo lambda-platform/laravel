@@ -1588,7 +1588,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           lines: [{
             "latitudes": [48, 51.5],
             "longitudes": [107, 106]
-          }, //bagahangai    
+          }, //bagahangai
           {
             "latitudes": [48, 51.5],
             "longitudes": [107, 111]

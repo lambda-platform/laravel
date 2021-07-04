@@ -93,7 +93,6 @@
                 this.loading = true;
                 this.datas = [];
                 axios.post("/getplanlist").then(({data}) => {
-                    console.log(data);
                     this.datas = data.data;
                     this.paginate.total = data.total;
                     this.paginate.currentPage = data.current_page;

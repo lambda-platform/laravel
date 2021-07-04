@@ -1,0 +1,201 @@
+
+html, body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.ivu_menu {
+    font-size: 12px !important;
+}
+
+.mbsubtable {
+    .ivu-table-cell {
+        font-size: 12px;
+    }
+}
+
+.splitdiv {
+    border: 1px dashed #eee;
+    width: 100%;
+    float: left;
+    position: relative;
+    left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mblabel {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #495060;
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: 100%;
+    li {
+        border: solid 1px #eeeeee;
+        padding: 0 0 0 20px;
+        margin-bottom: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        span {
+            align-content: flex-start;
+        }
+        .list-action {
+            margin-left: auto;
+            visibility: hidden;
+            a {
+                display: inline-block;
+                text-align: center;
+                height: 30px;
+                width: 30px;
+                padding: 8px 0;
+                font-size: 13px;
+                border-left: dashed 1px #4C99F1;
+                color: #666666;
+            }
+        }
+        &:hover {
+            border: dashed 1px #4C99F1;
+            .list-action {
+                visibility: visible;
+                a {
+                    &:hover {
+                        color: #4C99F1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//************************************** datatable
+.dg {
+    height: 100%;
+    position: relative;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    .dg-body {
+        overflow-x: auto;
+        .template1 {
+            display: flex;
+            &-menu {
+                border-top: solid 1px #dedede;
+                margin-left: auto;
+                width: 250px;
+                padding: 20px;
+            }
+            &-table {
+                flex: 1;
+            }
+            &-filter {
+                border-top: solid 1px #dedede;
+                margin-left: auto;
+                width: 250px;
+                padding: 20px;
+            }
+        }
+        .template2 {
+            display: flex;
+            flex-direction: column;
+            &-filter {
+                border-left: solid 1px #dedede;
+                border-right: solid 1px #dedede;
+            }
+            &-table {
+                flex: 1;
+            }
+        }
+        .ivu-table-wrapper {
+            .ivu-table-header {
+                th {
+                    font-size: 12px;
+                    .ivu-table-cell {
+                        text-align: center;
+                    }
+                }
+            }
+            .ivu-table-body {
+                td {
+                    font-size: 12px;
+                    cursor: pointer;
+                    img {
+                        max-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .dg-footer {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        border-left: solid 1px #dedede;
+        border-right: solid 1px #dedede;
+        .dg-info {
+        }
+        .ivu-page {
+            margin-left: auto;
+            .ivu-page-next,
+            .ivu-page-prev,
+            .ivu-page-item-jump-next,
+            .ivu-page-item-jump-prev {
+                a i {
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+.sub-sidebar {
+    nav {
+        ul {
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+                i {
+                    font-size: 10px !important;
+                    width: 10px;
+                    color: #444444;
+                }
+            }
+        }
+    }
+    logo{
+        height: 70px!important;
+    }
+}
+
+.dataform{
+    border-radius: 5px;
+    height: calc(100% - 100px) !important;;
+}
+
+
+.with-side-filter{
+    .dg{
+        background: none!important;
+    }
+}

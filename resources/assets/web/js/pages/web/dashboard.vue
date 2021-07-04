@@ -615,7 +615,7 @@
                                 "latitudes": [48, 51.5],
                                 "longitudes": [107, 106]
                             },
-                            //bagahangai    
+                            //bagahangai
                             {
                                 "latitudes": [48, 51.5],
                                 "longitudes": [107, 111]

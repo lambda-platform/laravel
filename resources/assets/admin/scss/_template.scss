@@ -1,0 +1,91 @@
+.grid-templates {
+    display: flex;
+    padding: 20px;
+    [class^="template-"] {
+        border: solid 3px #dedede;
+        height: 200px;
+        width: 300px;
+        display: flex;
+        margin-left: 20px;
+        color: #555555;
+        transition: all .3;
+        &:hover{
+            cursor: pointer;
+            border-color: #b3d8ff;
+        }
+        &.active{
+            border-color: #b3d8ff;
+            .t-grid, .t-filter{
+                background: #ecf5ff;
+            }
+        }
+    }
+    .t-grid {
+        background: #f1f2f3;
+        height: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .t-filter {
+        background: #f1f2f3;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .template-0 {
+        padding: 3px;
+        .t-grid {
+            width: 300px;
+        }
+    }
+    .template-1 {
+        padding: 3px;
+        .t-grid {
+            width: 200px;
+        }
+        .t-filter {
+            width: 95px;
+            margin-left: 5px;
+        }
+    }
+    .template-2 {
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+        .t-grid {
+            width: 288px;
+            height: 133px;
+            margin-top: auto;
+        }
+        .t-filter {
+            width: 288px;
+            height: 50px;
+        }
+    }
+}
+
+.crud-page {
+    height: 100vh;
+    width: 100%;
+    &-header {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        border-left: solid 1px #dedede;
+        h3 {
+            font-size: 11px;
+            text-transform: uppercase;
+            margin-right: 10px;
+            font-weight: 500;
+        }
+        &-right{
+            position: absolute;
+            right: 20px;
+        }
+    }
+    &-body {
+        height: calc(100% - 50px);
+    }
+}

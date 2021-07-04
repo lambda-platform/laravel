@@ -527,7 +527,6 @@
             filterData() {
 
                 axios.post("/filter", this.filter).then((o) => {
-                    console.log(o);
                     $('#totalProjects').text(o.data.all);
                     $('#totalObjects').text(o.data.allObject);
                     $('#totalObjectsInActive').text('Үүнээс захиалга авч буй (' + o.data.niitiinObjectInActivePercent + '%)');
@@ -558,7 +557,6 @@
                 return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
             },
             currencyFormat(num) {
-                console.log(num);
                 return num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
             },
             customGetDate(d) {

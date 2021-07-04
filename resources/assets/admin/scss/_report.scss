@@ -1,0 +1,279 @@
+.page-report {
+    padding: 20px 20px 10px 20px;
+    height: calc(100% - 66px) !important;
+    display: flex;
+    background: #F0F2F7;
+    .report-filter {
+        background: #ffffff;
+        border-radius: 5px;
+        margin: 0 15px 0 10px;
+        width: 260px;
+        //height: 480px;
+        box-shadow: rgba(221, 221, 221, 0.7) 0px 0px 8px 1px;
+        align-self: stretch;
+        h4.header {
+            background: #FAFAFA;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 12px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+        }
+
+        .divider {
+            height: 1px;
+            background: #f1f2f3;
+            margin-bottom: 15px;
+            margin-top: -5px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        .ivu-form {
+            padding: 10px 20px;
+        }
+
+        .filter-info {
+            border-top: dotted 1px #dedede;
+            padding-top: 20px;
+            ul {
+                list-style: none;
+                li {
+                    display: flex;
+                    b {
+                        width: 130px;
+                        font-weight: 500;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                    }
+                    span {
+                        flex: 1;
+                        margin-left: auto;
+                        text-align: right;
+                        color: #3498db;
+                    }
+                }
+            }
+        }
+    }
+
+    .report-section {
+        flex: 1;
+        overflow-y: auto;
+        padding: 0 20px 0 0;
+        margin: 0 0 0 auto;
+        display: flex;
+
+        .data-layer-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: rgba(#000, .15);
+        }
+
+        .pivot-table {
+            background: #ffffff;
+            box-shadow: rgba(221, 221, 221, 0.7) 0px 0px 8px 1px;
+            border-radius: 5px;
+            overflow: hidden;
+            flex: 1;
+            margin-right: 20px;
+            position: relative;
+            .table-header {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                background: #fafafa;
+                padding: 0 20px;
+                .title {
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    flex: 1;
+                    display: inline-flex;
+                    align-items: center;
+                    i {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                }
+                .tool {
+                    margin-left: auto;
+                    a {
+                        border: solid 1px #ababab;
+                        padding: 5px 8px;
+                        border-radius: 4px;
+                        font-size: 12px;
+                        color: #666;
+                        &:hover {
+                            border-color: #2D8CF1;
+                            color: #2D8CF1;
+                        }
+                        i {
+                            margin-right: 5px;
+                            font-size: 13px;
+                        }
+                    }
+                    span {
+                        margin: 0 5px;
+                    }
+                }
+            }
+
+            .table-wrap {
+                overflow: auto !important;
+                height: calc(100% - 80px);
+                position: relative;
+            }
+
+            .table-footer {
+                border-top: solid 1px #dedede;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                height: 40px;
+            }
+
+            $table-color: #7f8fa6;
+            $table-text-color: #718093;
+
+            table {
+                collapse: collapsed;
+                margin: 0;
+                overflow: hidden;
+                background: #ffffff;
+                min-width: 100%;
+                thead {
+                    //display: block;
+                    th {
+                        position: sticky;
+                        //background: #69808D;
+                        background: $table-color;
+                        color: white;
+                        padding: 10px 12px;
+                        text-align: left;
+                        font-size: 13px;
+                        font-weight: bold;
+                        &.center {
+                            text-align: center;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        &:hover {
+                            td {
+                                background: darken(#f5f8fa, 5%);
+                                cursor: pointer;
+                            }
+                        }
+                        &:nth-child(odd) {
+                            background: #f5f8fa;
+                        }
+                        td {
+                            padding: 9px 12px;
+                            text-align: left;
+                            font-size: 13px;
+                            color: #334455;
+                            vertical-align: middle;
+                            .middle-flex {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                            }
+                            img {
+                                height: 26px;
+                                width: 26px;
+                                border-radius: 50%;
+                                margin-right: 5px;
+                                border: solid 1px #69808D;
+                            }
+                            &.center {
+                                text-align: center;
+                            }
+                            .ivu-tooltip-content {
+                                text-align: left;
+                                position: relative !important;
+                                .ivu-tooltip-inner {
+                                    min-height: 26px !important;
+                                    padding: 3px 5px !important;
+                                }
+                            }
+
+                            .ivu-poptip-body {
+                                position: relative;
+                                border: solid 1px red;
+                                //padding: ;
+                                .ivu-icon {
+                                    left: 10px;
+                                    top: 10px;
+                                }
+                            }
+
+                            a {
+                                border: solid 1px #cccccc;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 24px;
+                                width: 24px;
+                                border-radius: 3px;
+                                color: #334455;
+                                transition: all .2s;
+                                &:hover {
+                                    color: #5D4DE8;
+                                    border-color: #5D4DE8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: rgba(221, 221, 221, 0.7) 0px 0px 8px 1px;
+            min-width: 500px;
+            float: left;
+            margin-left: auto;
+            &-header {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                margin-bottom: 20px;
+                background: #fafafa;
+                padding: 0 20px;
+                .title {
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    flex: 1;
+                    display: inline-flex;
+                    align-items: center;
+                    i {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                }
+                .tool {
+                    margin-left: auto;
+                }
+            }
+
+            &-body {
+                position: relative;
+            }
+        }
+    }
+
+}

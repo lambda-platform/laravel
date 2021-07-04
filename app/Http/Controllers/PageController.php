@@ -27,7 +27,7 @@ class PageController extends Controller
 //        $data->bag = DB::table('t_bag_horoo')->get();
         $data->zereglel = DB::table('t_togtmol')->where('undsen_id', 41)->where('code', 4)->get();
         $year = DB::table('t_year')->get();
-        $data->year=DB::table("t_togtmol")->where('undsen_id', 103)->where('active', 1)->orderBy('daraalal')->get();
+        $data->year = DB::table("t_togtmol")->where('undsen_id', 103)->where('active', 1)->orderBy('daraalal')->get();
 
         //ALL
         //$qrAll = (int)DB::select('select  sum(ail_too) as ailtoo from t_barilga where   zahialga_tuluv>452 and zahialga_tuluv<457 and (4 in(zoriulalt_ids) or 221 in(zoriulalt_ids))')[0]->ailtoo;// or 221 in (zoriulalt_ids)

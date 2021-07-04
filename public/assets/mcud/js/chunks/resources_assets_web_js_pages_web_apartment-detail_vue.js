@@ -304,7 +304,6 @@ __webpack_require__.r(__webpack_exports__);
       this.detail = null;
       axios.post("/getosdetail/" + this.$route.params.id).then(function (_ref) {
         var data = _ref.data;
-        console.log(data);
         _this.data = data.barilga;
         _this.related = data.related;
         _this.imgs = data.imgs;
@@ -314,7 +313,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     renderImg: function renderImg(path) {
       if (path == null) return {
-        'background-image': 'url("/assets/zipcode/images/unnamed.png")'
+        'background-image': 'url("/assets/mcud/images/unnamed.png")'
       };
       return {
         'background': 'url("' + path.replace(/\\/g, '/') + '")'
@@ -336,7 +335,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apartment-detail.vue?vue&type=template&id=e763026e&scoped=true& */ "./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true&");
+/* harmony import */ var _apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./apartment-detail.vue?vue&type=template&id=e763026e& */ "./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&");
 /* harmony import */ var _apartment_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./apartment-detail.vue?vue&type=script&lang=js& */ "./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
@@ -348,11 +347,11 @@ __webpack_require__.r(__webpack_exports__);
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
   _apartment_detail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
-  _apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  "e763026e",
+  null,
   null
   
 )
@@ -380,27 +379,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true&":
-/*!***********************************************************************************************************!*\
-  !*** ./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true& ***!
-  \***********************************************************************************************************/
+/***/ "./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e& ***!
+  \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./apartment-detail.vue?vue&type=template&id=e763026e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_apartment_detail_vue_vue_type_template_id_e763026e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./apartment-detail.vue?vue&type=template&id=e763026e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&");
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true&":
-/*!**************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&scoped=true& ***!
-  \**************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/assets/web/js/pages/web/apartment-detail.vue?vue&type=template&id=e763026e& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -457,7 +456,7 @@ var render = function() {
                                   attrs: {
                                     src: item.path
                                       ? item.path
-                                      : "/assets/zipcode/images/unnamed.png",
+                                      : "/assets/mcud/images/unnamed.png",
                                     alt: ""
                                   }
                                 }),
@@ -469,7 +468,7 @@ var render = function() {
                               _c("div", { staticClass: "img-item" }, [
                                 _c("img", {
                                   attrs: {
-                                    src: "/assets/zipcode/images/unnamed.png",
+                                    src: "/assets/mcud/images/unnamed.png",
                                     alt: ""
                                   }
                                 }),
@@ -755,135 +754,144 @@ var render = function() {
                       [
                         _c("h4", [_vm._v("Нэмэлт мэдээлэл")]),
                         _vm._v(" "),
-                        _c(
-                          "table",
-                          {
-                            staticClass: "table table-small table-striped full"
-                          },
-                          [
-                            _c("tbody", [
-                              _c("tr", [
-                                _c("td", [_vm._v("Камержуулалттай эсэх")]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.detail.is_camera == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
+                        _vm.detail !== null
+                          ? _c(
+                              "table",
+                              {
+                                staticClass:
+                                  "table table-small table-striped full"
+                              },
+                              [
+                                _c("tbody", [
+                                  _c("tr", [
+                                    _c("td", [_vm._v("Камержуулалттай эсэх")]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.detail.is_camera === 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("24 цаг нэвтрэх боломжтой эсэх")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_24 == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Нэгдсэн ресепшинтэй эсэх")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_reception == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Нэгдсэн цэвэрлэгээтэй эсэх")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_tseverlegee == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [_vm._v("Дулаан гаражтай эсэх")]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_garage == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v("Тоглоомын талбайтай эсэх")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_togloom == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [
+                                      _vm._v(
+                                        "Ашиглалтын шаардлага хангахгүй болсон"
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_shaard_hangahgui == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("tr", [
+                                    _c("td", [_vm._v("Хурлын өрөө")]),
+                                    _vm._v(" "),
+                                    _c("td", [
+                                      _vm.data.is_hural_uruu == 1
+                                        ? _c("i", {
+                                            staticClass: "ti-check text-success"
+                                          })
+                                        : _c("i", {
+                                            staticClass: "ti-close text-danger"
+                                          })
+                                    ])
+                                  ])
                                 ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v("24 цаг нэвтрэх боломжтой эсэх")
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_24 == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Нэгдсэн ресепшинтэй эсэх")]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_reception == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v("Нэгдсэн цэвэрлэгээтэй эсэх")
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_tseverlegee == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Дулаан гаражтай эсэх")]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_garage == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Тоглоомын талбайтай эсэх")]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_togloom == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [
-                                  _vm._v(
-                                    "Ашиглалтын шаардлага хангахгүй болсон"
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_shaard_hangahgui == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("tr", [
-                                _c("td", [_vm._v("Хурлын өрөө")]),
-                                _vm._v(" "),
-                                _c("td", [
-                                  _vm.data.is_hural_uruu == 1
-                                    ? _c("i", {
-                                        staticClass: "ti-check text-success"
-                                      })
-                                    : _c("i", {
-                                        staticClass: "ti-close text-danger"
-                                      })
-                                ])
-                              ])
+                              ]
+                            )
+                          : _c("p", [
+                              _vm._v(" Барилгын нэмэлт мэдээлэл ороогүй байна")
                             ])
-                          ]
-                        )
                       ]
                     )
                   ])

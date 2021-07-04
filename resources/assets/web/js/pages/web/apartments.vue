@@ -37,7 +37,7 @@
 
                             <el-divider></el-divider>
                             <el-form-item label="Огноо">
-                                <el-select disabled v-model="filter.year" placeholder="Сонгоно уу">
+                                <el-select v-model="filter.year" placeholder="Сонгоно уу">
                                     <el-option
                                         v-for="item in data.year"
                                         :label="item.ner"
@@ -138,7 +138,7 @@
                     room: null,
                     price: null,
                     type: null,
-                    year: 2020
+                    year: 2021
                 },
                 data: window.init.data,
                 sumlist: window.init.data.sum,
@@ -159,7 +159,6 @@
                 this.loading = true;
                 this.datas = [];
                 axios.post("/getoslist?page=" + page, this.filter).then(({data}) => {
-                    console.log(data);
                     this.datas = data.data;
                     this.paginate.total = data.total;
                     this.paginate.currentPage = data.current_page;
@@ -184,7 +183,7 @@
             },
             renderImg(path) {
                 if(path ==null)
-                    return {'background-image':'url("/assets/zipcode/images/unnamed.png")'};
+                    return {'background-image':'url("/assets/mcud/images/unnamed.png")'};
                 return {'background': 'url("' + path.replace(/\\/g, '/') + '")'};
             }
         }
