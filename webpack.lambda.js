@@ -98,9 +98,6 @@ const compileModules = () => {
     mix.js("resources/assets/admin/js/index.js", "public/assets/admin/js/app.js").vue();
     mix.sass("resources/assets/admin/scss/style.scss", "public/assets/admin/css/app.css");
 
-    mix.js("resources/assets/web/js/index.js", "public/assets/example/js/app.js").vue();
-    mix.sass("resources/assets/web/scss/style.scss", "public/assets/example/css/app.css");
-
     mix
         .js(`${lambdaRoot}/adminmodule/src/index.js`, `public/assets/lambda/js/adminmodule.js`).vue()
         .sass(`${lambdaRoot}/adminmodule/src/scss/style.scss`, `public/assets/lambda/css/adminmodule.css`)
