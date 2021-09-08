@@ -4,6 +4,7 @@
 /storage/*.key
 /vendor
 .env
+yarn.lock
 .DS_Store
 .env.backup
 .phpunit.result.cache

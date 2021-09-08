@@ -26,7 +26,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "@lambda-platform/adminmodule": "^0.0.3",
+        "@lambda-platform/adminmodule": "^0.0.4",
         "@lambda-platform/agent": "^2.0.1",
         "@lambda-platform/chart": "^1.0.2",
         "@lambda-platform/dataform": "^2.0.5",
