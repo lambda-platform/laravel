@@ -1,8 +1,8 @@
 <template>
     <div class="paper-theme aside-page">
-        <sidebar class="with-text">
+        <sidebar class="wide">
             <div slot="brand" class="logo">
-                <img :src="$logo" alt="Lambda"/>
+                <img src="/assets/lambda/images/light.svg" alt="Lambda"/>
             </div>
 
             <ul>
@@ -37,6 +37,7 @@
                     <li>
                         <a @click="logoutModal = true">
                             <i class="ti-power-off"></i>
+                            <span>Гарах</span>
                         </a>
                     </li>
                 </ul>

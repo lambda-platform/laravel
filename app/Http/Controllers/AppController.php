@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 class AppController extends Controller
 {
-    function index()
+    function home()
     {
+
         return view('index');
     }
 }

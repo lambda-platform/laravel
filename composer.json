@@ -1,30 +1,24 @@
 {
     "name": "lambda-platform/laravel",
     "type": "project",
-    "description": "Lambda platform",
-    "homepage": "https://github.com/lambda-platform",
-    "keywords": [
-        "framework",
-        "laravel",
-        "lambda-platform"
-    ],
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "fideloper/proxy": "^4.4",
+        "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "intervention/image": "^2.5.1",
-        "lambda-platform/agent": "^0.0.2",
-        "lambda-platform/dataform": "^0.0.7",
-        "lambda-platform/datagrid": "^0.0.2",
+        "lambda-platform/adminmodule": "^0.0.2",
+        "lambda-platform/agent": "^0.0.5",
+        "lambda-platform/dataform": "^0.0.9",
+        "lambda-platform/datagrid": "^0.0.5",
         "lambda-platform/datasource": "^0.0.2",
         "lambda-platform/krud": "^0.0.2",
         "lambda-platform/moqup": "^0.0.2",
-        "lambda-platform/puzzle": "^0.0.5",
-        "lambda-platform/template-paper": "^0.0.3",
-        "laravel/framework": "^8.12",
+        "lambda-platform/template-paper": "^0.0.6",
+        "laravel/framework": "^8.54",
+        "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "php": "^7.3|^8.0",
         "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
@@ -34,16 +28,6 @@
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
     },
     "autoload": {
         "psr-4": {
@@ -57,12 +41,13 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -70,5 +55,17 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

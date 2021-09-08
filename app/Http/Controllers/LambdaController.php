@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Lambda\Puzzle\Puzzle;
-
+use Illuminate\Support\Facades\Config;
 class LambdaController extends Controller
 {
     public function __construct()
@@ -14,6 +14,8 @@ class LambdaController extends Controller
 
     function index()
     {
+        $config = Config::get('lambda');
+
         $permissions = null;
         $menu = null;
 

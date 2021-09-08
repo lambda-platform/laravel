@@ -1,0 +1,82 @@
+{
+ "schema_load_mode": "auto",
+ "project_key": "53faaa02-f517-11eb-a368-0242ac110002",
+ "theme": "aside",
+ "domain": "",
+ "title": "Lambda Platform",
+ "subTitle": "Програм хамгамж бүтээх ажлыг автоматжуулагч",
+ "copyright": "Lambda Platform© 2021",
+ "favicon": "/assets/lambda/images/favicon.png",
+ "bg": "/assets/lambda/images/bg.png",
+ "logo": "/assets/lambda/images/dark.svg",
+ "logoText": "",
+ "super_url": "/lambda/puzzle",
+ "app_url": "/admin",
+ "has_language": false,
+ "withCrudLog": false,
+ "krud_public": false,
+ "languages": [
+  {
+   "label": "Moнгол",
+   "code": "mn"
+  }
+ ],
+ "default_language": "mn",
+ "role-redirects": [
+  {
+   "role_id": 1,
+   "url": "/lambda/puzzle"
+  }
+ ],
+ "user_data_fields": [
+  "id"
+ ],
+ "data_form_custom_elements": [],
+ "password_reset_time_out": 0,
+ "static_words": {
+  "mn": {
+   "codeSentError": "Нууц үг шинэчлэх код илгээх үед алдаа гарлаа!",
+   "email": "И-мэйл",
+   "emailRequired": "И-мэйл хаяг аа оруулна уу",
+   "forgot": "Нууц үгээ мартсан?",
+   "forgotDescription": "И-мэйл хаягаа оруулаад нууц үг ээ сэргээнэ үү",
+   "login": "Нэвтрэх",
+   "loginError": "Уучлаарай, нэвтрэх үед алдаа гарлаа!!",
+   "loginSuccess": "Амжилттай нэвтэрлээ. Түр хүлээнэ үү!",
+   "loginTitle": "СИСТЕМД НЭВТРЭХ",
+   "noReply": "Энэхүү и-мэйл нь автоматаар илгээгдсэн учир хариу бичих шаардлагагүй.",
+   "password": "Нууц үг",
+   "passwordConfirm": "Нууц үг баталгаажуулах",
+   "passwordConfirmError": "Нууц үг баталгаажуулалт таарсангүй !!!",
+   "passwordReset": "НУУЦ ҮГ ШИНЭЧЛЭХ",
+   "passwordResetCode": "Нууц үгээ сэргээх код",
+   "passwordResetCodeIncorrect": "Нууц үг сэргээх код буруу байна !!!",
+   "passwordResetCodeRequired": "Нууц үг солих код  оруулаагүй байна !!!",
+   "passwordResetCodeSent": "Нууц үг шинэчлэх код амжилттай илгээгдлээ !",
+   "passwordResetCodeTimeout": "Нууц үг сэргээх кодын хугацаа дууссан !!!",
+   "passwordResetSuccess": "Нууц үг амжилттай шинэчлэгдлээ !",
+   "remember": "Энэ компьютерт сануулах",
+   "sendPasswordResetCode": "Нууц үг солих код и-мэйлээр авах",
+   "subtitle": "Lambda Platform ",
+   "title": "Lambda Platform",
+   "userNotFound": "Хэрэглэгч олдсонгүй !!!",
+   "username": "Нэвтрэх нэр"
+  }
+ },
+ "notify": {
+  "firebaseConfig": {
+   "apiKey": "",
+   "publicKey": "",
+   "authDomain": "",
+   "databaseURL": "",
+   "projectId": "",
+   "storageBucket": "",
+   "messagingSenderId": "",
+   "appId": "",
+   "measurementId": ""
+  },
+  "serverKey": "",
+  "sound": "/assets/lambda/notification.mp3",
+  "icon": ""
+ }
+}

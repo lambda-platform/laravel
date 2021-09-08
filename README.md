@@ -1,10 +1,15 @@
 # Lambda Platform Laravel v2
 
-## Installation 
+## Installation
+php artisan key:generate
+
+php artisan migrate
+
+php artisan db:seed
 
 #Create a project
 
-composer create-project lambda-platform/laravel my-app 
+composer create-project lambda-platform/laravel my-app
 Composer install  /rm -rf vendor заримдаа хийлгээдэг шүү/
 Copy .env.example to .env and tailor for your app, configure the baseURL and any database settings.
 

@@ -23,6 +23,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+//        $lambdaConfig = json_decode(file_get_contents(base_path().DIRECTORY_SEPARATOR."lambda.json"), true);
+//        $lambdaConfig["app"] = "lambda";
+//        config(['lambda'=>$lambdaConfig]);
         //
     }
 }

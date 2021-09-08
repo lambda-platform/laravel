@@ -13,9 +13,7 @@ if (!fs.existsSync(dataform_custom)) {
 mix.webpackConfig({
 
     output: {
-        chunkFilename: mix.inProduction()
-            ? "assets/lambda/js/chunks/[name].[chunkhash].js"
-            : "assets/lambda/js/chunks/[name].js"
+        chunkFilename: "assets/lambda/js/chunks/[name].js?id=[contenthash]"
     },
     resolve: {
         modules: [
@@ -28,12 +26,13 @@ mix.webpackConfig({
             // path.resolve(`${lambdaRoot}/moqup/`, 'node_modules'),
             // path.resolve(`${lambdaRoot}/page/`, 'node_modules'),
             // path.resolve(`${lambdaRoot}/puzzle/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/template/`, 'node_modules'),
             // path.resolve(`${lambdaRoot}/chart/`, 'node_modules'),
             // path.resolve(`${lambdaRoot}/notify/`, 'node_modules'),
-            // path.resolve(`${lambdaRoot}/template/`, 'node_modules'),
+            // path.resolve(`${lambdaRoot}/appAdmin/`, 'node_modules'),
         ],
         alias: {
-            dataform_custom: path.resolve(__dirname, dataform_custom),
+            dataform_custom: path.resolve(__dirname, "resources/assets/dataform_custom"),
             vue$: "vue/dist/vue.common.js",
         },
         extensions: ["*", ".js", ".ts", ".vue", ".json"],
@@ -99,9 +98,12 @@ const compileModules = () => {
     mix.js("resources/assets/admin/js/index.js", "public/assets/admin/js/app.js").vue();
     mix.sass("resources/assets/admin/scss/style.scss", "public/assets/admin/css/app.css");
 
+    mix.js("resources/assets/web/js/index.js", "public/assets/example/js/app.js").vue();
+    mix.sass("resources/assets/web/scss/style.scss", "public/assets/example/css/app.css");
+
     mix
-        .js(`${lambdaRoot}/puzzle/src/index.js`, `public/assets/lambda/js/puzzle.js`).vue()
-        .sass(`${lambdaRoot}/puzzle/src/scss/style.scss`, `public/assets/lambda/css/puzzle.css`)
+        .js(`${lambdaRoot}/adminmodule/src/index.js`, `public/assets/lambda/js/adminmodule.js`).vue()
+        .sass(`${lambdaRoot}/adminmodule/src/scss/style.scss`, `public/assets/lambda/css/adminmodule.css`)
 
         .js(`${lambdaRoot}/agent/src/index.js`, `public/assets/lambda/js/agent.js`).vue()
         .sass(`${lambdaRoot}/agent/src/scss/agent.scss`, `public/assets/lambda/css/agent.css`)
@@ -132,13 +134,10 @@ const compileModules = () => {
         .js(`${lambdaRoot}/chart/src/index.js`, "public/assets/lambda/js/chart.js").vue()
         .sass(`${lambdaRoot}/chart/src/scss/style.scss`, "public/assets/lambda/css/chart.css")
 
-        .js(`${lambdaRoot}/notify/src/index.js`, `public/assets/lambda/js/notification.js`).vue()
-
-        // .js("@lambda/logger/assets/index.js", "public/assets/lambda/logger.js")
-        // .sass("@lambda/logger/assets/scss/logger.scss", "public/assets/lambda/logger.css")
 
 
-        .sourceMaps()
+
+        // .sourceMaps()
 };
 
 const compileTemplate = () => {
