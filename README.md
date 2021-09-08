@@ -12,8 +12,9 @@ php artisan jwt:secret
 php artisan key:generate
 #Database generate
 
-Php artisan migrate
-Php artisan db:seed // бааз үүсч байгааг шалгах
+php artisan migrate
+
+php artisan db:seed
 
 #javascript dependency
 
