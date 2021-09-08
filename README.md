@@ -1,6 +1,7 @@
 # Lambda Platform Laravel v2
 
 ## Installation
+
 #Create a project
 
 composer create-project lambda-platform/laravel my-app
@@ -10,6 +11,9 @@ Copy .env.example to .env and tailor for your app, configure the baseURL and any
 php artisan jwt:secret
 
 php artisan key:generate
+
+set your projec key lambda.json
+
 #Database generate
 
 php artisan migrate
