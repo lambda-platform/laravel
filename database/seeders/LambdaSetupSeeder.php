@@ -33,10 +33,10 @@ class LambdaSetupSeeder extends Seeder
         DB::table('users')->truncate();
         DB::table('users')->insert([
             'role' => 1,
-            'login' => 'superadmin',
+            'login' =>  env('SYSADMIN_LOGIN', 'superadmin'),
             'status' => 1,
-            'password' => Hash::make('superadmin'),
-            'email' => 'superadmin@example.com',
+            'password' => Hash::make(env('SYSADMIN_LOGIN', 'SYSADMIN_PASSWORD')),
+            'email' => env('SYSADMIN_EMAIL', null),
             'first_name' => 'Admin',
             'last_name' => 'Super',
             'gender' => 'm',
