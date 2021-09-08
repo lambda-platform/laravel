@@ -1162,10 +1162,10 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@lambda-platform/adminmodule@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@lambda-platform/adminmodule/-/adminmodule-0.0.3.tgz#a52778d10f2572e0a7797302a6fcd499a15fa8c4"
-  integrity sha512-xv4pqBGhZasl5idVOd18GVks9/6Ex9oy5uoUa8STfRDpbiHS5L63A8itYNlX3WZ3CrKtCifDadA9/L2773n/sg==
+"@lambda-platform/adminmodule@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@lambda-platform/adminmodule/-/adminmodule-0.0.4.tgz#2dd5a841709e7c34ab5ae745fb979d47dea7367e"
+  integrity sha512-slm+a2WYXWZVIP/WeACtLVZdOEX4L+YKXSHBZYhgMeotJVdl05WBS2I3IBCmjWxkYKrHNJP3virkZAFw+qpbNQ==
   dependencies:
     axios "^0.21.1"
     core-js "^3.6.5"
